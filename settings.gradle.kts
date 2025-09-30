@@ -1,0 +1,1 @@
+rootProject.name = "inteliij-psi-mcp"
