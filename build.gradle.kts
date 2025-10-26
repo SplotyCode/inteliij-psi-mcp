@@ -18,11 +18,12 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin.html
 dependencies {
     intellijPlatform {
-        create("IC", "2025.1.4.1")
+        // Target PhpStorm platform build with bundled PHP plugin
+        create("PS", "2025.2.2")
+        //plugin("com.intellij.mcpserver")
+        bundledPlugin("com.jetbrains.php")
+        bundledPlugin("com.intellij.mcpServer")
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
-
-        // Add necessary plugin dependencies for compilation here, example:
-        // bundledPlugin("com.intellij.java")
     }
 }
 
